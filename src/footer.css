@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+.Main-Footer
+{
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+.Footer-Copyright p
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #aaaa;
+    text-align: center;
+}
+
+.Footer-Copyright span
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.home-page-social-iconss ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.home-page-social-iconss ul li i
+{
+    color: #fff;
+    font-size: 23px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Hover Section Home-Page */
+
+.home-page-social-iconss ul li i:hover
+{
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+
+@media (max-width: 575.98px) 
+{ 
+    .Footer-Copyright p
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

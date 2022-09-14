@@ -1,0 +1,143 @@
+.Main-Contact
+{
+    background-color: black;
+    padding-bottom: 110px;
+}
+
+.contact-info
+{
+    padding: 70px;
+}
+
+.icons-detail
+{
+    margin-bottom: 60px;
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+.icons-detail i
+{
+    color: white;
+    font-size: 24px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.icons-detail h4
+{
+    font-size: 16px;
+    color: #aaaaaa;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.contact-info
+{
+    background-color: #121212;
+}
+
+.inputs input
+{
+    height: 41px;
+    width: 100%;
+    margin-top: 22px;
+    background: none;
+    border: none;
+    outline: none;
+    border: 1px solid #606060;
+    color: #aaaaaa;
+    padding: 11px 19px 11px 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.text-area
+{
+    margin-top: 20px;
+}
+
+.text-area textarea
+{
+    background: none;
+    border: none;
+    outline: none;
+    color: #aaaaaa;
+    border: 1px solid #606060;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    padding: 11px 19px 11px 19px;
+    width: 100%;
+
+}
+
+.text-area textarea::placeholder
+{
+    color: #aaaaaa;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.inputs input::placeholder
+{
+    color: #aaaaaa;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.button-message
+{
+    display: flex;
+    justify-content:end ;
+}
+
+.button-message a
+{
+    border-radius: 0;
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    margin-right:11px;
+    margin-top: 20px;
+}
+
+.button-message a:hover
+{
+    background-color: transparent;
+    color: white;
+}
+
+.inputs input:focus
+{
+    transition:  all 0.3s ease-in-out;
+    border: 3px solid #606060;
+}
+
+.text-area textarea:focus
+{
+    transition:  all 0.3s ease-in-out;
+    border: 3px solid #606060;
+}
+
+@media (max-width: 575.98px) 
+{ 
+    .contact-info
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .button-message a
+    {
+        margin-right: 0;
+    }
+
+    .margin-for-mobile-display
+    {
+        margin-top: 30px;
+    }
+
+}

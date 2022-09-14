@@ -1,0 +1,27 @@
+.navbar
+{
+  padding-top: 60px;
+  background-color:rgba(0, 0, 0, 0.85) ;
+}
+
+.navbar-heading-style
+{
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+}
+
+.navbar-link-style
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-link
+{
+  text-transform: uppercase;
+}
+
+.navbar-link:hover
+{
+  color: white;
+  transition: 2s;
+}

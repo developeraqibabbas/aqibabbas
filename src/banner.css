@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    width: 100%;
+}
+
+.home-page
+{
+  height: auto;
+  width: 100%;
+  background: url("./images/header-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.home-page-overlay
+{
+  height: auto;
+  width: 100%;
+  padding-top: 110px;
+  padding-bottom: 30px;
+  background-color:rgba(0, 0, 0, 0.85) ;
+}
+
+.home-page-text
+{
+    position: relative;
+    top: 30%;
+}
+
+.home-page-text h3
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.type-writer
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 56px;
+    margin-top: 25px;
+}
+
+.home-page-text ul li
+{
+    display: inline-block;
+    color: #aaa;
+    font-family: 'Lato', sans-serif;
+    list-style-type: disc;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.home-page-text ul
+{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.home-page-social-icons
+{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    margin-top: 120px;
+}
+
+.home-page-social-icons ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.home-page-social-icons ul li i
+{
+    color: #fff;
+    font-size: 23px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Hover Section Home-Page */
+
+.home-page-social-icons ul li i:hover
+{
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+/* Making Home-Page Responsive */
+
+@media (max-width: 575.98px) 
+{ 
+
+    .home-page
+    {
+        height: 100vh;
+    }
+
+    .home-page-overlay
+    {
+        height: 100vh;
+    }
+
+    .For-Mobile-Only
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        font-size: 56px;
+    }
+
+    .home-page-text ul li
+    {
+        text-align: center;
+        display:list-item ;
+        list-style-type: none;
+        margin-top: 10px;
+    }
+    
+    .home-page-text ul
+    {
+        margin-top: 0;
+    }
+
+    .home-page-social-icons
+    {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        position: relative;
+        top: 40%;
+    }
+
+    .home-page-overlay
+    {
+        padding-top: 0;
+    }
+
+    .type-writer
+    {
+        display: none;
+        margin-top: 0;
+    }
+
+    i
+    {
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: 575.98px) 
+{ 
+    .For-Mobile-Only
+    {
+        display: none;
+    }
+
+    .type-writer
+    {
+        display: block;
+    }
+
+}
+
+

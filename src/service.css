@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+.Main-Service-Page
+{
+    background-color: #000;
+    height: auto;
+    padding-bottom: 80px;
+}
+
+.heading-section h1
+{
+    color: white;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 110px;
+    padding-bottom: 30px;
+}
+
+.service-cards
+{
+    width: 100%;
+    height: auto;
+    background-color: #121212;
+    margin-top: 50px;  
+    padding: 50px 20px 45px;  
+}
+
+.devlopment-service
+{   
+    height: 100%; 
+}
+
+.designing-service
+{
+    height: 100%;
+}
+
+.react-service
+{
+    height: 100%;
+}
+
+.wordpress-service
+{
+    height: 100%;
+}
+
+.service-cards i
+{
+    color: white;
+    font-size: 36px;
+    margin-bottom: 27px;
+}
+
+.service-cards h5
+{
+    font-size: 14px;
+    line-height:15.4px;
+    color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.service-cards h5:hover
+{
+    color: #ababab;
+    transition: 0.5s;
+}
+
+.service-cards p
+{
+    font-family: 'Lato', sans-serif;    
+    font-size: 14px;
+    color: #ababab;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media (max-width: 576px) 
+{
+    .devlopment-service
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.designing-service
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.react-service
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.wordpress-service
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.development-service,.designing-service,.react-service,.wordpress-service
+{
+    margin-top:30px;
+}
+
+}
