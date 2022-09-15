@@ -3,8 +3,8 @@ import "../latest-project.css";
 
 const Latest = () => {
   return (
-    <div className='Main-Latest-Projects'>
-        <div className="latest-projects-heading">
+    <div className='Main-Latest-Projects' >
+        <div className="latest-projects-heading" id="projects">
             <h1>Latest Projects</h1>
         </div>
         <div className="latest-projects-content">

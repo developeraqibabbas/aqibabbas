@@ -4,7 +4,7 @@ import "../contact.css";
 const Contact = () => {
   return (
     <div className='Main-Contact'>
-      <div className="container">
+      <div className="container" id='contact_me'>
         <div className="contact-info">
             <div className="row justify-content-center icons-detail">
                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">

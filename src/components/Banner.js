@@ -63,7 +63,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="home-page">
+    <div className="home-page" id="home">
       <div className="home-page-overlay">
       <div className="home-page-text">
         <h3>Hello,</h3>
