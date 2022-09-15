@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/aqibabbas/static/css/main.1e65dcd7.css",
+    "main.js": "/aqibabbas/static/js/main.00cd121e.js",
+    "static/js/787.1ed0c42c.chunk.js": "/aqibabbas/static/js/787.1ed0c42c.chunk.js",
+    "static/media/phil-desforges-6GvSbhl-XTU-unsplash.jpg": "/aqibabbas/static/media/phil-desforges-6GvSbhl-XTU-unsplash.26f481d2116470fbce91.jpg",
+    "static/media/header-bg.jpg": "/aqibabbas/static/media/header-bg.100edf23f70eaf6d0427.jpg",
+    "index.html": "/aqibabbas/index.html",
+    "main.1e65dcd7.css.map": "/aqibabbas/static/css/main.1e65dcd7.css.map",
+    "main.00cd121e.js.map": "/aqibabbas/static/js/main.00cd121e.js.map",
+    "787.1ed0c42c.chunk.js.map": "/aqibabbas/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e65dcd7.css",
+    "static/js/main.00cd121e.js"
+  ]
+}
