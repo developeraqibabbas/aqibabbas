@@ -2,6 +2,7 @@ import React from 'react'
 import '../nav-bar.css';
 
 const Navbar = () => {
+  
   return (
     <div>
         <nav className="navbar navbar-expand-lg navbar-dark">

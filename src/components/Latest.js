@@ -1,42 +1,88 @@
-import React from 'react'
+import React ,{useState} from 'react';
+import AllData from './AllData'
 import "../latest-project.css";
+import { ImgOverlay } from 'image-overlay-react'
+import 'image-overlay-react/dist/index.css'
 
-const Latest = () => {
+function Latest() {
+
+  const [images,setImage]  = useState(AllData)
+
+  const allItem =()=>{
+    const finalData = AllData.filter((value)=>{
+      return value;
+    })
+    setImage(finalData)
+  }
+
+  const onlyPython =(categoryItem)=>{
+    const finalData = AllData.filter((value)=>{
+      return value.category == categoryItem
+    })
+
+    setImage(finalData)
+  }
+  const onlyOffice =(categoryItem)=>{
+    const finalData = AllData.filter((value)=>{
+      return value.category == categoryItem
+    })
+
+    setImage(finalData)
+  }
+  const onlyReact =(categoryItem)=>{
+    const finalData = AllData.filter((value)=>{
+      return value.category == categoryItem
+    })
+    setImage(finalData)
+  }
+  
   return (
-    <div className='Main-Latest-Projects' >
-        <div className="latest-projects-heading" id="projects">
-            <h1>Latest Projects</h1>
-        </div>
-        <div className="latest-projects-content">
-            <ul>
-                <li>Web Dvelopment</li>
-                <li>Web Designing</li>
-                <li>React Development</li>
-                <li>WordPress Development</li>
-            </ul>
-            
-            <section>
-      <div class="container mt-3">
-        <div class="img-container-grid">
-        <div class="smallsquare"><img src="https://cdn.pixabay.com/photo/2018/05/28/22/11/message-in-a-bottle-3437294__340.jpg" class="img-grid-c"/></div>
-        <div class="smallsquare"><img src="https://media.istockphoto.com/photos/view-of-sydney-harbour-australia-picture-id535455441?k=6&m=535455441&s=612x612&w=0&h=jVkW0bOqvffn2SzvUdncgkwHGScJRzak0oaQGij__h8=" class="img-grid-c"/></div>
-          <div class="h_rectangle"><img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-grid-c"/></div>
-          <div class="smallsquare"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3WnzXzbr2hiB8lPq3n_p5fnQdvOMc3Ouummyk11uVylX-7rtdXA" class="img-grid-c"/></div>
-          <div class="bigsquare"><img src="https://thumbs-prod.si-cdn.com/N-_fU5xNOvR2T25teuPAdtGkBhY=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/90/b2/90b2dfe5-a9ab-4821-9ccc-45ae1d52fa8a/blackholewithclouds_c-1-941x519.jpg" class="img-grid-c"/></div>
-          <div class="bigsquare_blank">
-            <div class="inner_square"><img src="https://www.w3schools.com/w3css/img_lights.jpg" class="img-grid-c"/></div>
-            <div class="inner_square"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-oo8-jn28YVesncpNZ4cBHocvHtKLwzmpVDbq1k7KNa5jEiL" class="img-grid-c"/></div>
-            <div class="inner_square"><img src="https://media.cntraveller.in/wp-content/uploads/2018/10/GettyImages-990972132-866x487.jpg" class="img-grid-c"/></div>
-            <div class="inner_square"><img src="https://www.w3schools.com/howto/img_snow.jpg" class="img-grid-c"/></div>
-          </div>
-          <div class="v_rectangle"><img src="https://images.unsplash.com/photo-1541233349642-6e425fe6190e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="img-grid-c"/></div>
-        </div>
+    <>
+    <div className="Main-Latest-Projects">
+      <div className="latest-projects-heading">
+        <h1>Latest Projects</h1>
       </div>
-    </section>
+      <div className="latest-projects-content">
+        <ul>
+        <li onClick={allItem}>All</li>
+        <li onClick={()=>onlyPython('Python')}>Web Development / Designing</li>
+        <li onClick={()=>onlyOffice('Office')}>React JS Development</li>
+        <li onClick={()=>onlyReact('React')}>WordPress Development</li>
+        </ul>
 
-        </div>
+
+
+    <div className="container">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        {
+          images.map((value)=>{
+            return (
+             <div className="col mt-3 image-control-latest-projects">
+                <ImgOverlay
+      imgSrc={value.image}
+      className='img-fluid'
+      bgColor='rgba(0,0,0,0.8)'
+      position='pop'
+      width='300px'
+      height='200px'
+      fColor='gray'
+    >
+      <div className="main-content-handle">
+      <a href="/"><h3>Live Preview</h3></a>
+      </div>
+    </ImgOverlay>
+             </div>
+            );
+          })
+        }
+      </div>
     </div>
-  )
+    </div>
+    </div>
+    </>
+
+
+  );
 }
 
-export default Latest
+export default Latest;

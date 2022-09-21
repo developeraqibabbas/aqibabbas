@@ -14,18 +14,10 @@ const About = () => {
         <div className="about-me col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <h1>About Me</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exeracita aation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            I'm Aqib Abbas web developer. I spend my whole day, practically everyday experimenting with HTML, CSS and JAVASCRIPT; I enjoy work that challenges me to learn something new and stretch in different direction. I do my best to stay on top of changes in the state of the art so that I can meet challenges with tools well suited to the job at hand. I build websites that delight and inform. I do it well.
           </p>
           <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-            unde omnis iste natus error sit voluptatem accusantium doloremque
-            laudantium, totam rem aperiam.
+          At the moment, I’m working on projects that lead me to learn something new. I’ve focused my energies on the web, which happily has proven itself to be a wonderful decision. A more complete resume is available at resume page.
           </p>
           <span className="hover-button">
             <button className="btn btn-outline-light">Hire Me</button>

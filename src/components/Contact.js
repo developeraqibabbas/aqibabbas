@@ -1,7 +1,13 @@
 import React from 'react'
 import "../contact.css";
-
+import { useState } from 'react';
 const Contact = () => {
+
+  const [name, setname] = useState('')
+  const [email, setemail] = useState('')
+  const [budget, setbudget] = useState('')
+  const [detail, setdetail] = useState('')
+
   return (
     <div className='Main-Contact'>
       <div className="container" id='contact_me'>
@@ -44,6 +50,8 @@ const Contact = () => {
                     </div>
                   </div>
                   </div>
+
+                  
 
                 </form>
             </div>
